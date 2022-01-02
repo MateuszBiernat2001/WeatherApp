@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ width: 100vw;
+ font-size: 20px;
+ background-image: url(img/1.jpg);
+ background-size: cover;
+ font-family: comfortaa;
+}
+input{
+ font-size: 15px;
+ padding: 5px 10px;
+ margin-top: 10px;
+ background:none;
+ border: none;
+ color: black;
+ border-bottom: 2px solid #fff;
+}
+input::placeholder{
+ color: black;
+}
+button{
+ padding: 10px;
+ margin-left: 20px;
+ color: #fff;
+ font-weight: bold;
+ background: none;
+ border-radius: 5px;
+ text-transform: uppercase;
+ cursor: pointer;
+ transition: background-color .3s, color .3s;
+}
+button:hover{
+ color: black;
+ background-color: white;
+}
+
+.wrapper{
+ width: 800px;
+ height: 400px;
+}
+.top{
+ height: 260px;
+}
+.bottom{
+ height: 140px;
+}
+.main-info{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 200px;
+}
+.city-name{
+ font-size: 45px;
+}
+.headings,
+.weather-info {
+ display: flex;
+ align-items: center;
+}
+
+.headings p,
+.weather-info p {
+ width: 33.3%;
+ text-align: center;
+}
+
+.headings {
+ height: 35%;
+ text-transform: uppercase;
+ font-weight: bold;
+ border-top: 1px solid #ddd;
+ border-bottom: 1px solid #ddd;
+}
+
+.weather-info {
+ height: 65%;
+ font-size: 26px;
+}
+
+.photo {
+ width: 140px;
+ height: 140px;
+}
+
+.warning {
+ margin-top: 10px;
+ font-size: 14px;
+ color: red;
+}
+
+@media screen and (min-width: 360px){
+ h1{
+  padding-left: 10px;
+ }
+ .city-name{
+  padding-left: 10px;
+ }
+ input{
+  padding-left:20px;
+ }
+ p{
+  font-size: 15px;
+ }
+}
+@media screen and (min-width: 320px){
+ h1{
+  padding-left: 60px;
+ }
+ .city-name{
+  padding-left: 40px;
+ }
+ input{
+  padding-left: 40px;
+ }
+ p{
+  font-size: 10px;
+ }
+}
+@media screen and (min-width: 760px){
+ h1{
+  font-size: 50px;
+ }
+ p{
+  font-size: 30px;
+ }
+
+}
